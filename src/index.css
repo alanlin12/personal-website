@@ -1,5 +1,11 @@
 @import "tailwindcss";
 
+/* Colors Tailwind turns into classes: text-accent, text-muted, hover:text-accent, ... */
+@theme {
+  --color-accent: #8b5e3c;  /* brown sugar: active nav link, links */
+  --color-muted: #8a7a6c;   /* soft gray-brown: dates and secondary text */
+}
+
 /* Site-wide colors. Change them here and the whole site follows. */
 :root {
   --milk: #f7f1e8;          /* base: smoky off-white */
