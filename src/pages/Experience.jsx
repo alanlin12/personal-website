@@ -5,7 +5,7 @@ const sections = [
     title: 'experience',
     items: [
       {
-        text: 'built UpstreamExploiter as an undergraduate researcher at',
+        text: 'built a pipeline to verify llm exploits for ',
         org: 'NC State',
         href: 'https://www.ncsu.edu',
         sub: 'summer 2026 · node.js, python, codeql',
@@ -17,7 +17,7 @@ const sections = [
         sub: 'summer 2026 · react, AI, turso, node.js'
       },
       {
-        text: 'simulated iOS app triggering mechanism for api-key leakages for ',
+        text: 'built iOS app triggering mechanism for api-key leakages exploits for ',
         org: 'Wake Forest',
         href: 'https://www.wfu.edu',
         sub: 'spring 2026 · gemini, droidrun',
