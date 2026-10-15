@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+/* Site-wide colors. Change them here and the whole site follows. */
+:root {
+  --milk: #f7f1e8;          /* base: smoky off-white */
+  --milk-shadow: #e9dccb;   /* darker milk-tea swirls */
+  --tea: #b48c64;           /* tea brown, used for the floating circles */
+  --pearl: #2b1a12;         /* tapioca pearl (boba) dark brown */
+  --ink: #3a2a20;           /* main text color */
+}
+
+body {
+  min-height: 100vh;
+  background-color: var(--milk);
+  /* Soft cloudy patches of white and milk-tea beige. "fixed" keeps them still while scrolling. */
+  background-image:
+    radial-gradient(ellipse 60% 50% at 15% 15%, rgba(255, 255, 255, 0.9), transparent 70%),
+    radial-gradient(ellipse 50% 60% at 85% 25%, rgba(233, 220, 203, 0.7), transparent 70%),
+    radial-gradient(ellipse 70% 50% at 50% 95%, rgba(222, 203, 180, 0.6), transparent 70%);
+  background-attachment: fixed;
+  color: var(--ink);
+}
+
+/* When the window isn't focused, App adds the "paused" class and every animation freezes in place.
+   Any animation added later is paused automatically too. */
+.paused,
+.paused * {
+  animation-play-state: paused !important;
+}

@@ -1,0 +1,54 @@
+/* Full-screen layer behind the content. pointer-events: none lets clicks pass through. */
+.milk-tea {
+  position: fixed;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ---------- Smoke: big, very blurry blobs that drift slowly, like milk swirling in tea ---------- */
+.smoke {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(60px);
+  animation: smoke-drift ease-in-out infinite alternate;
+}
+.smoke-1 { width: 55vw; height: 45vh; top: 5%;  left: -10%; background: rgba(255, 255, 255, 0.8);   animation-duration: 38s; }
+.smoke-2 { width: 50vw; height: 50vh; top: 35%; right: -15%; background: rgba(226, 208, 186, 0.55); animation-duration: 46s; }
+.smoke-3 { width: 60vw; height: 40vh; bottom: -10%; left: 20%; background: rgba(255, 252, 247, 0.7); animation-duration: 52s; }
+
+@keyframes smoke-drift {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(6vw, -4vh) scale(1.15); }
+}
+
+/* ---------- Bubbles: blurred circles that float from below the screen up past the top ---------- */
+.bubble {
+  position: absolute;
+  bottom: -60px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  box-shadow: inset 0 0 6px rgba(180, 140, 100, 0.25);
+  opacity: 0;
+  animation-name: rise;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+.bubble-tea {
+  background: color-mix(in srgb, var(--tea) 35%, transparent);
+}
+
+@keyframes rise {
+  0%   { transform: translate(0, 0);                         opacity: 0; }
+  10%  {                                                     opacity: 0.8; }
+  50%  { transform: translate(var(--sway), -55vh); }
+  90%  {                                                     opacity: 0.6; }
+  100% { transform: translate(0, -115vh);                    opacity: 0; }
+}
+
+/* People who turn on "Reduce motion" get a still background */
+@media (prefers-reduced-motion: reduce) {
+  .smoke, .bubble { animation: none; }
+  .bubble { opacity: 0.4; bottom: auto; top: 50%; }
+}
