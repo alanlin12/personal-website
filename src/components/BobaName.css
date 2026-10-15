@@ -14,7 +14,7 @@
 }
 
 /* Positions are relative to the name's box (24px text in a 36px-tall line). */
-.boba-1 { width: 9px; height: 9px; top: -5px;    right: 0px; animation-delay: -1.1s; } /* right of "n" */
+.boba-1 { width: 9px; height: 9px; top: -2px;    right: 0px; animation-delay: -1.1s; } /* right of "n" */
 .boba-2 { width: 6px; height: 6px; bottom: 15px;  right: -8px; animation-delay: -2.2s; } /* trailing below it */
 
 @keyframes bob {
