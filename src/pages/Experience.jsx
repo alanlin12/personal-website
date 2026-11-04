@@ -5,6 +5,12 @@ const sections = [
     title: 'experience',
     items: [
       {
+        text: 'building a SQL data pipeline and ML to predict vulnerability severity for professor',
+        org: 'Errin Fulp',
+        href: 'https://fulp.cs.wfu.edu/',
+        sub: 'fall 2026 · duckdb, scikit-learn, pandas'
+      },
+      {
         text: 'built a pipeline to verify llm exploits for ',
         org: 'NC State',
         href: 'https://www.ncsu.edu',
