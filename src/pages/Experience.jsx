@@ -14,19 +14,19 @@ const sections = [
         text: 'built a pipeline to verify llm exploits for ',
         org: 'NC State',
         href: 'https://www.ncsu.edu',
-        sub: 'summer 2026 · node.js, python, codeql',
+        sub: 'summer 2026, node.js, python',
       },
       {
         text: 'designed and shipped a song-guessing game at ',
         org: 'cil.wtf',
         href: 'https://cil.wtf/',
-        sub: 'summer 2026 · react, AI, turso, node.js'
+        sub: 'summer 2026 · react, turso, node.js'
       },
       {
         text: 'built iOS app triggering mechanism for api-key leakages exploits for ',
         org: 'Wake Forest',
         href: 'https://www.wfu.edu',
-        sub: 'spring 2026 · gemini, droidrun',
+        sub: 'spring 2026 · droidrun, AI',
       },
       {
         text: 'tutor and coding instructor for ',
