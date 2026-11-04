@@ -5,7 +5,7 @@ const sections = [
     title: 'experience',
     items: [
       {
-        text: 'building a SQL data pipeline and ML model to predict vulnerability severity for professor',
+        text: 'building a SQL + ML model to predict CVE exploitability for ',
         org: 'Errin Fulp',
         href: 'https://fulp.cs.wfu.edu/',
         sub: 'fall 2026 · duckdb, scikit-learn, pandas'
